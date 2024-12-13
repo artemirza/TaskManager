@@ -40,7 +40,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
     
       - name: Build Docker image
-        run: docker build --no-cache -t arteam18/my-taskmanager:${{ github.sha }} -f TaskManager/TaskManager/TaskManager/Dockerfile .
+        run: docker build --no-cache -t arteam18/my-taskmanager:${{ github.sha }} -f TaskManager/TaskManager/Dockerfile .
 
       - name: Push Docker image to Docker Hub
         run: docker push arteam18/my-taskmanager:${{ github.sha }}
