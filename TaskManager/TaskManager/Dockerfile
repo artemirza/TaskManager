@@ -6,6 +6,7 @@ COPY TaskManager.sln ./TaskManager.sln
 COPY BusinessLogicLayer/ ./BusinessLogicLayer/
 COPY DataAccessLayer/ ./DataAccessLayer/
 COPY TaskManager/ ./TaskManager/
+COPY TaskManager.Tests/ ./TaskManager.Tests/
 
 RUN dotnet restore ./TaskManager.sln
 
